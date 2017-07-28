@@ -83,7 +83,10 @@ function colorPicker(item){
      ctx.fillStyle = "rgba(0, 0, 0, 0.7)"
      ctx.fillRect(0, 0, 320, 480)
      ctx.fillStyle = "#fff"
-     ctx.fillRect(mousePos.x, mousePos.y, 100, 100)
+     let menuX = (mousePos.x > 190) ? 190 : mousePos.x
+     ctx.fillRect(menuX, mousePos.y, 130, 90)
+     ctx.fillStyle = "magenta"
+     drawCircle(menuX + 10, mousePos.y + 10, 15)
      console.log(item)
 }
 
