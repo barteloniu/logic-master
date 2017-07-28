@@ -1,0 +1,8 @@
+html, body{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#canvas{
+  border: 2px solid magenta;
+  background-color: #ccc;
+}
